@@ -119,3 +119,29 @@ mean of x
 There are p-values of 1, 0.6072, and 0.04168 for manufacturing lots 1, 2, and 3 respectively. We would fail to reject H<sub>0</sub> for lots 1 and 2. But we reject H<sub>0</sub> for lot 3. This makes sense given what we saw in the previous summary statistics of these data: lot 3 had a significant variance, and the true mean of the psi of the suspension coils in that lot are significantly different from the population mean of 1500 psi.
 
 ## Study Design: MechaCar vs. Competition
+The following is a proposal for comparing the average maintainance costs of the MechaCar vs other vehicles.
+
+### Metrics
+For this study we will gather data on the cost of maintainance for the MechaCar over 5, 10, and 15 years. For each category, we will take mean of all maintainance costs. We will also use the mean maintainance costs for all other vehicles at the 5, 10, and 15 year marks. So our metrics are:
+
+- `MechaCar 5 Year Maintainance Costs`
+- `MechaCar 10 Year Maintainance Costs`
+- `MechaCare 15 Year MAintainance Costs`
+- `Sample All Cars 5 Year Maintainance Costs`
+- `Sample All Cars 10 Year Maintainance Costs`
+- `Sample All Cars 15 Year Maintainance Costs`
+
+We will group each of these metrics into 3 statistical test comparing `MechaCar 5 Year Maintainance Costs` with `Sample All Cars 5 Year Maintainance Costs`, and then the 10 year metrics together and the 15 year metrics together.
+
+### Hypotheses
+For each test the hypotheses will be the following:
+
+**H<sub>0</sub>**: There is no difference in average maintainance costs between the MechaCar and a Sample of all other cars (for the time period).
+
+**H<sub>a</sub>**: There is a difference in average maintainance costs between the MechaCar and a Sample of all other cars (for the time period).
+
+### Statistical Test
+Because we are comparing averages of two groups, we will use a 2-sample T-test. Additionally, because we comparing to see if there is a difference, this will be a two-tailed T-test. We will use a significance level of α = 0.05.
+
+### Data
+To perform the above tests, we will need the maintainance costs of MechaCar and all other vehicles at the 5, 10, and 15 year marks. The biggest prohhibitive factor to this study is that MechaCar is a new product, so the data will not be available for a while. But as the data are made available, the tests can be run. 
